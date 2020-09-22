@@ -31,8 +31,26 @@ trunc(5.78)
 is_atom(:bird)
 # => true
 
-# String interpolation
+# String and string interpolation
 
 name = "Lupita"
 IO.puts "Hello #{name}"
 # => "Hello Lupita"
+
+byte_size("Pupuru")
+# => 6
+is_binary(5)
+# => false
+is_binary("Pupuru")
+# => true
+String.length("Pupuruneko")
+# => 10
+String.upcase("rijong")
+# "RIJONG"
+
+# Anonymous function
+add = fn(a, b) -> a + b end
+add.(2, 3)
+# => 5
+is_function(add)
+# => true
