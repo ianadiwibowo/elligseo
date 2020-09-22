@@ -1,8 +1,8 @@
-# Hello World
+## Hello World
 
 IO.puts("Hello world from Elixir")
 
-# Basic
+## Basic
 
 12 / 10
 # => 1.2 -- Float division
@@ -25,13 +25,13 @@ is_number(7.0e-10)
 trunc(5.78)
 # => 5 -- Get the integer part of a float
 
-# Ruby-like symbol (atom)
+## Ruby-like symbol (atom)
 :cat == :cat
 # => true
 is_atom(:bird)
 # => true
 
-# String and string interpolation
+## String and string interpolation
 
 name = "Lupita"
 IO.puts "Hello #{name}"
@@ -48,9 +48,15 @@ String.length("Pupuruneko")
 String.upcase("rijong")
 # "RIJONG"
 
-# Anonymous function
+## Anonymous function
+
 add = fn(a, b) -> a + b end
 add.(2, 3)
 # => 5
 is_function(add)
 # => true
+
+## Even more anonymous function
+
+(fn(a, b) -> a * b end).(5, 6)
+# => 30
